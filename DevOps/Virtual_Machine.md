@@ -1,4 +1,6 @@
-##Virtual Machines (VMs)
+#Virtual Machines (VMs)
+
+---
 
 ## Why Virtual Machines Exist
 
