@@ -1,4 +1,164 @@
-Introduction 
-Container images allow us to confine the application code, its runtime, and all of its dependencies in a pre-defined format. The container runtimes like runC, containerd, or cri-o can use pre-packaged images as a source to create and run one or more containers. These runtimes are capable of running containers on a single host, however, in practice, we would like to have a fault-tolerant and scalable solution, achieved by building a single controller/management unit, a collection of multiple hosts connected together. This controller/management unit is generally referred to as a container orchestrator.
+📘 Introduction to Kubernetes
+Linux Foundation Course Notes
+📌 Introduction
 
-In this chapter, we will explore why we should use container orchestrators, different implementations of container orchestrators, and where to deploy them.
+Container images allow us to package:
+
+Application code
+
+Runtime
+
+Libraries
+
+Dependencies
+
+into a pre-defined format.
+
+Container runtimes such as:
+
+runC
+
+containerd
+
+CRI-O
+
+use these images to create and run containers.
+
+While these runtimes can run containers on a single host, production environments require:
+
+Fault tolerance
+
+Scalability
+
+High availability
+
+To achieve this, we use a container orchestrator, which acts as a centralized controller managing multiple connected hosts as a cluster.
+
+📦 What Are Containers?
+
+Containers are an application-centric method to deliver:
+
+High-performing applications
+
+Scalable applications
+
+Portable applications
+
+They provide:
+
+Isolated environments
+
+Lightweight virtualization
+
+No interference between applications
+
+Containers are especially suitable for microservices architecture, where applications are split into smaller independent services.
+
+🖼️ Containers Architecture
+![Containers Architecture](images/containers-1.png)
+
+
+
+🎯 What Is Container Orchestration?
+
+Running containers on a single machine may work in:
+
+Development (Dev)
+
+Testing environments
+
+However, in:
+
+Quality Assurance (QA)
+
+Production (Prod)
+
+Applications must meet strict requirements:
+
+✅ Fault-tolerance
+
+✅ On-demand scalability
+
+✅ Optimal resource usage
+
+✅ Service auto-discovery
+
+✅ External accessibility
+
+✅ Zero-downtime updates & rollbacks
+
+Container orchestration tools automate deployment, scaling, networking, and management of containers across clusters.
+
+🏗️ Container Orchestrators
+
+With enterprises moving to the cloud, container orchestration solutions have become essential.
+
+Some popular container orchestration tools include:
+
+1️⃣ Amazon Elastic Container Service
+
+Hosted container orchestration service by AWS.
+
+2️⃣ Azure Container Instances
+
+Basic container orchestration service by Microsoft Azure.
+
+3️⃣ Azure Service Fabric
+
+Open-source orchestrator by Microsoft Azure.
+
+4️⃣ Kubernetes
+
+Open-source orchestration tool originally started by Google and now part of the Cloud Native Computing Foundation (CNCF).
+
+5️⃣ Nomad
+
+Container and workload orchestrator by HashiCorp.
+
+6️⃣ Docker Swarm
+
+Built-in container orchestrator within Docker Engine.
+
+🚀 Why Use Container Orchestrators?
+
+Managing a few containers manually is possible.
+
+Managing hundreds or thousands across global infrastructure?
+Nearly impossible without orchestration.
+
+Container orchestrators provide:
+
+🔹 Cluster Management
+
+Group multiple hosts into a single cluster.
+
+🔹 Intelligent Scheduling
+
+Automatically place containers based on available resources.
+
+🔹 Service Communication
+
+Allow containers to communicate regardless of host location.
+
+🔹 Storage Binding
+
+Attach containers to persistent storage.
+
+🔹 Load Balancing
+
+Expose applications using abstraction layers.
+
+🔹 Resource Optimization
+
+Monitor and optimize CPU and memory usage.
+
+🔹 Security Policies
+
+Implement access control and security rules.
+
+📚 Course Focus
+
+In this course, we will explore:
+
+Kubernetes
+One of the most in-demand container orchestration tools in modern DevOps and Cloud Engineering.
