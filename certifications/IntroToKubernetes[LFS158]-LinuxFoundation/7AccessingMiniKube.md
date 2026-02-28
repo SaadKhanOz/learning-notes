@@ -20,7 +20,7 @@ The main component of the Kubernetes control plane is the API Server, responsibl
 
 Below, we can see the representation of the HTTP API directory tree of Kubernetes:
 
-<httpdir.png>
+![Http apis directory](images/httpdir.png)
 
 HTTP API directory tree of Kubernetes can be divided into three independent group types:
 
