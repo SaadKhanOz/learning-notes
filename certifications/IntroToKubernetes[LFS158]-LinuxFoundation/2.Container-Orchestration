@@ -1,164 +1,125 @@
-📘 Introduction to Kubernetes
-Linux Foundation Course Notes
-📌 Introduction
+# 📘 Introduction to Kubernetes  
+### Linux Foundation Course Notes  
+
+---
+
+## 📌 Introduction
 
 Container images allow us to package:
 
-Application code
-
-Runtime
-
-Libraries
-
-Dependencies
+- Application code  
+- Runtime  
+- Libraries  
+- Dependencies  
 
 into a pre-defined format.
 
 Container runtimes such as:
 
-runC
-
-containerd
-
-CRI-O
+- runC  
+- containerd  
+- CRI-O  
 
 use these images to create and run containers.
 
 While these runtimes can run containers on a single host, production environments require:
 
-Fault tolerance
+- Fault tolerance  
+- Scalability  
+- High availability  
 
-Scalability
+To achieve this, we use a **container orchestrator**, which manages multiple connected hosts as a cluster.
 
-High availability
+---
 
-To achieve this, we use a container orchestrator, which acts as a centralized controller managing multiple connected hosts as a cluster.
+## 📦 What Are Containers?
 
-📦 What Are Containers?
+Containers are an application-centric way to deliver:
 
-Containers are an application-centric method to deliver:
+- High-performing applications  
+- Scalable applications  
+- Portable applications  
 
-High-performing applications
+They provide isolated environments so applications do not interfere with each other.
 
-Scalable applications
+Containers are especially suitable for **microservices architecture**.
 
-Portable applications
+### 🖼️ Containers Architecture
 
-They provide:
-
-Isolated environments
-
-Lightweight virtualization
-
-No interference between applications
-
-Containers are especially suitable for microservices architecture, where applications are split into smaller independent services.
-
-🖼️ Containers Architecture
 ![Containers Architecture](images/containers-1.png)
 
+---
 
+## 🎯 What Is Container Orchestration?
 
-🎯 What Is Container Orchestration?
+Running containers on a single machine works for:
 
-Running containers on a single machine may work in:
+- Development (Dev)  
+- Testing  
 
-Development (Dev)
+But in:
 
-Testing environments
-
-However, in:
-
-Quality Assurance (QA)
-
-Production (Prod)
+- Quality Assurance (QA)  
+- Production (Prod)  
 
 Applications must meet strict requirements:
 
-✅ Fault-tolerance
+- Fault tolerance  
+- On-demand scalability  
+- Optimal resource usage  
+- Service auto-discovery  
+- External accessibility  
+- Seamless updates and rollbacks  
 
-✅ On-demand scalability
+Container orchestration tools automate deployment, scaling, networking, and management across clusters.
 
-✅ Optimal resource usage
+---
 
-✅ Service auto-discovery
+## 🏗️ Popular Container Orchestrators
 
-✅ External accessibility
+Some well-known container orchestration tools include:
 
-✅ Zero-downtime updates & rollbacks
+- :contentReference[oaicite:0]{index=0}  
+- :contentReference[oaicite:1]{index=1}  
+- :contentReference[oaicite:2]{index=2}  
+- Amazon Elastic Container Service  
+- Azure Container Instances  
+- :contentReference[oaicite:5]{index=5}  
 
-Container orchestration tools automate deployment, scaling, networking, and management of containers across clusters.
+---
 
-🏗️ Container Orchestrators
+## 🚀 Why Use Container Orchestrators?
 
-With enterprises moving to the cloud, container orchestration solutions have become essential.
+Managing hundreds or thousands of containers manually is extremely difficult.
 
-Some popular container orchestration tools include:
+Orchestrators provide:
 
-1️⃣ Amazon Elastic Container Service
+- Cluster management  
+- Intelligent scheduling  
+- Inter-container communication  
+- Storage binding  
+- Load balancing  
+- Resource optimization  
+- Security policy implementation  
 
-Hosted container orchestration service by AWS.
+---
 
-2️⃣ Azure Container Instances
+## 📚 Course Focus
 
-Basic container orchestration service by Microsoft Azure.
+This course focuses on:
 
-3️⃣ Azure Service Fabric
+**:contentReference[oaicite:6]{index=6}**
 
-Open-source orchestrator by Microsoft Azure.
+One of the most in-demand container orchestration tools in DevOps and Cloud Engineering.
 
-4️⃣ Kubernetes
+---
 
-Open-source orchestration tool originally started by Google and now part of the Cloud Native Computing Foundation (CNCF).
+## 🔎 Summary
 
-5️⃣ Nomad
+Container orchestration is essential for building:
 
-Container and workload orchestrator by HashiCorp.
+- Scalable systems  
+- Reliable systems  
+- Production-grade deployments  
 
-6️⃣ Docker Swarm
-
-Built-in container orchestrator within Docker Engine.
-
-🚀 Why Use Container Orchestrators?
-
-Managing a few containers manually is possible.
-
-Managing hundreds or thousands across global infrastructure?
-Nearly impossible without orchestration.
-
-Container orchestrators provide:
-
-🔹 Cluster Management
-
-Group multiple hosts into a single cluster.
-
-🔹 Intelligent Scheduling
-
-Automatically place containers based on available resources.
-
-🔹 Service Communication
-
-Allow containers to communicate regardless of host location.
-
-🔹 Storage Binding
-
-Attach containers to persistent storage.
-
-🔹 Load Balancing
-
-Expose applications using abstraction layers.
-
-🔹 Resource Optimization
-
-Monitor and optimize CPU and memory usage.
-
-🔹 Security Policies
-
-Implement access control and security rules.
-
-📚 Course Focus
-
-In this course, we will explore:
-
-Kubernetes
-One of the most in-demand container orchestration tools in modern DevOps and Cloud Engineering.
+Kubernetes is currently the industry-leading solution for orchestrating containerized applications at scale.
